@@ -1,0 +1,34 @@
+header {
+    margin-bottom: 30px;
+}
+
+div.invisible {
+    visibility: none;
+}
+
+div.brands {
+    text-align: center;
+}
+
+h2.brandName {
+    font-size: 1.3rem;
+    min-height: 35px;
+    margin-top: 15px;
+}
+
+img.brandThumbnail {
+    border: 1px solid grey;
+}
+
+div.brand {
+    margin-bottom: 25px;
+}
+
+#logo {
+    max-height:40px;
+    margin-right: 10px;
+}
+
+.bg-dark {
+    background-color:#26282b !important;
+}
