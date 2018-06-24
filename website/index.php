@@ -61,18 +61,11 @@
 // get the url
 var url = window.location.href;
 
-console.log(url);
-
 //getting the access token from url
 var access_token = url.split("#")[1].split("=")[1].split("&")[0];
 
 // get the userid
 var userId = url.split("#")[1].split("=")[2].split("&")[0];
-
-console.log("access token");
-console.log(access_token);
-console.log("user id");
-console.log(userId);
 
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://api.fitbit.com/1/user/'+ userId +'/profile.json');
@@ -81,8 +74,7 @@ xhr.onload = function() {
    if (xhr.status === 200) {
     var response = JSON.parse(xhr.responseText);
     var userId = response.user.fullName;
-      console.log("user name " + userId);
-      document.getElementById("username").innerHTML = "Welcome " + userId + "!";
+      document.getElementById("loginLink").innerHTML = "Welcome " + userId + "!";
       //document.write(xhr.responseText);
          }
 };
