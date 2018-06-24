@@ -33,3 +33,8 @@ div.brand {
 .bg-dark {
     background-color:#26282b !important;
 }
+
+div#loginLink p.navbar-brand {
+    margin-bottom: 0px !important;
+    color: white !important;
+}

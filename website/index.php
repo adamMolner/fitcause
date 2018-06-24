@@ -1,8 +1,5 @@
 <?php require 'inc/header.php'; ?>
 
-
-<div id="username"></div>
-
 <div class="container brands">
     <div class="row">
         <div class="col-md brand">
@@ -61,32 +58,23 @@
 <script>
 // get the url
 var url = window.location.href;
-
 //getting the access token from url
 var access_token = url.split("#")[1].split("=")[1].split("&")[0];
-
 // get the userid
 var userId = url.split("#")[1].split("=")[2].split("&")[0];
-
 var xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://api.fitbit.com/1/user/'+ userId +'/profile.json');
 xhr.setRequestHeader("Authorization", 'Bearer ' + access_token);
 xhr.onload = function() {
    if (xhr.status === 200) {
     var response = JSON.parse(xhr.responseText);
-
-    var userName = response.user.fullName;
-      console.log("user name " + userName);
-
-      document.getElementById("username").innerHTML = "Welcome " + userName + "!";
-
-
+    var userId = response.user.fullName;
+      document.getElementById("loginLink").innerHTML = "Welcome " + userId + "!";
       //document.write(xhr.responseText);
          }
 };
 xhr.send();
 //console.log(xhr.responseText.user.fullName);
-
 </script>
 
 
