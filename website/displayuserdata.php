@@ -35,6 +35,7 @@ console.log(storedNames);
 
 var userId = storedNames.user.fullName;
 document.getElementById('fullName').innerHTML = "Name: " + userId;
+document.getElementById('loginLink').style.display = 'none';
 console.log("user name" + userId);
 var avi = storedNames.user.avatar150;
 console.log(avi);
