@@ -1,25 +1,25 @@
-
 <?php require 'inc/header.php'; ?>
 
 
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <!-- Left Side -->
+            <img id="avatar" src="">
+            <p id="fullName"></p>
+            <p id="age"></p>
+            <p id="gender"></p>
+        </div>
+        <div class="col-md-8">
+            <!-- Right Side -->
+            <p id="steps"></p>
 
-
-<div>
-<img id="avatar" src="">
-<p id="fullName"></p>
-<p id="age"></p>
-<p id="gender"></p>
-</div>
-
-<div>
-<p id="steps"></p>
-
-
-
-<h4>Badges:</h4>
-<img src="img/floors.png">
-<img src="img/miles.png">
-<img src="img/steps.png">
+            <h4>Badges:</h4>
+            <img src="img/floors.png">
+            <img src="img/miles.png">
+            <img src="img/steps.png">
+        </div>
+    </div>
 </div>
 
 <script>
@@ -28,10 +28,7 @@ function getData(){
 
 var storedNames = JSON.parse(localStorage.getItem("data"));
 
-
-
 console.log(storedNames);
-
 
 var userId = storedNames.user.fullName;
 document.getElementById('fullName').innerHTML = "Name: " + userId;
@@ -52,11 +49,7 @@ window.onload = getData;
 
 </script>
 
-
 <?php include('inc/footer.php'); ?>
-
-
-
 
 </body>
 </html>
