@@ -7,7 +7,8 @@
             <h2 class="brandName">American Brain Tumor Association</h2>
             <p class="brandDescription">The American Brain Tumor Association is the only national nonprofit organization in the United States dedicated to providing support services and programs to brain tumor patients and their families, as well as the funding of brain tumor research.</p>
             <div class="btn-group">
-                <a href="facetemplate.php?id=1"><button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button></a> 
+                <button type="button" class="btn btn-sm btn-outline-secondary"><a href="http://www.abta.org/" class="nostyle" target="_blank">Learn More</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Download Watch Face</button>
             </div>
         </div>
         <div class="col-md brand">
@@ -15,7 +16,8 @@
             <h2 class="brandName">ALS Association</h2>
             <p class="brandDescription">The ALS Association is the only national non-profit organization fighting Lou Gehrig’s Disease on every front.</p>
             <div class="btn-group">
-                <a href="facetemplate.php?id=2"><button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button></a> 
+                <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.als.net/" class="nostyle" target="_blank">Learn More</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Download Watch Face</button>
             </div>
         </div>
         <div class="col-md brand">
@@ -23,7 +25,8 @@
             <h2 class="brandName">Code.org</h2>
             <p class="brandDescription">Code.org is a non-profit organization that aims to encourage people, particularly school students in the United States, to learn computer science.</p>
             <div class="btn-group">
-                <a href="facetemplate.php?id=3"><button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button></a>
+                <button type="button" class="btn btn-sm btn-outline-secondary"><a href="http://www.code.org" class="nostyle" target="_blank">Learn More</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Download Watch Face</button>
             </div>
         </div>
     </div> <!-- End of row-->
@@ -34,7 +37,8 @@
                 <h2 class="brandName">Autism Speaks</h2>
                 <p class="brandDescription">Autism Speaks is dedicated to promoting solutions, across the spectrum and throughout the life span, for the needs of individuals with autism and their families through advocacy and support; increasing understanding and acceptance of people with autism spectrum disorder; and advancing research into causes and better interventions for autism spectrum disorder and related conditions.</p>
                 <div class="btn-group">
-                    <a href="facetemplate.php?id=4"><button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button></a> 
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="http://www.autismspeaks.org/" class="nostyle" target="_blank">Learn More</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Download Watch Face</button>
                 </div>
             </div>
             <div class="col-md brand">
@@ -42,7 +46,8 @@
                 <h2 class="brandName">Detroit Zoological Society</h2>
                 <p class="brandDescription">The Detroit Zoological Society is a renowned leader in humane education, wildlife conservation, animal welfare and environmental sustainability.</p>
                 <div class="btn-group">
-                    <a href="facetemplate.php?id=5"><button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button></a> 
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="http://www.detroitzoo.com" class="nostyle" target="_blank">Learn More</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Download Watch Face</button>
                 </div>
             </div>
             <div class="col-md brand">
