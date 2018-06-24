@@ -5,7 +5,7 @@
 
 <a id="loginlink" href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=22D2P8&redirect_uri=http%3A%2F%2Ffitcause-env-1.pvtvmgyr9v.us-east-1.elasticbeanstalk.com%2Fwebsite%2F&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800">Login</a>
 
-
+<a href="query.php?id=1"></a>
 
 <div id="username"></div>
 
@@ -16,7 +16,7 @@
             <h2 class="brandName">American Brain Tumor Association</h2>
             <p class="brandDescription">The American Brain Tumor Association is the only national nonprofit organization in the United States dedicated to providing support services and programs to brain tumor patients and their families, as well as the funding of brain tumor research.</p>
             <div class="btn-group">
-                <a href="http://www.abta.org/" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button></a> 
+                <a href="query.php?id=1"><button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button></a> 
             </div>
         </div>
         <div class="col-md brand">
