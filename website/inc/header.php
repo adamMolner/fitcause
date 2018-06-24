@@ -28,7 +28,7 @@
     </div>
     <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
+            <a href="index.php" class="navbar-brand d-flex align-items-center">
                 <img src="img/watchlogo.svg" alt="FitCause" id="logo">
                 <strong>FitCause</strong>
             </a>
