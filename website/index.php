@@ -69,12 +69,10 @@ xhr.onload = function() {
    if (xhr.status === 200) {
     var response = JSON.parse(xhr.responseText);
     var userId = response.user.fullName;
-      document.getElementById("loginLink").innerHTML = "Welcome " + userId + "!";
-      //document.write(xhr.responseText);
-         }
+      document.getElementById("loginLink").innerHTML = "<p class='navbar-brand'>Welcome " + userId + "!</p>";
+    }
 };
 xhr.send();
-//console.log(xhr.responseText.user.fullName);
 </script>
 
 
