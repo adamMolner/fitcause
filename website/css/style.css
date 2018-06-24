@@ -47,3 +47,7 @@ a.nostyle, a.nostyle:active, a.nostyle:hover {
 a.nostyle:hover {
     color: white !important;
 }
+
+img.badge {
+    width: 30%;
+}
