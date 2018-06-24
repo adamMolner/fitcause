@@ -3,7 +3,7 @@
 
 
 
-<a href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=22D2P8&redirect_uri=http%3A%2F%2Ffitcause-env-1.pvtvmgyr9v.us-east-1.elasticbeanstalk.com%2Fwebsite%2F&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800">Login</a>
+<a id="loginlink" href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=22D2P8&redirect_uri=http%3A%2F%2Ffitcause-env-1.pvtvmgyr9v.us-east-1.elasticbeanstalk.com%2Fwebsite%2F&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800">Login</a>
 
 
 
@@ -89,9 +89,11 @@ xhr.setRequestHeader("Authorization", 'Bearer ' + access_token);
 xhr.onload = function() {
    if (xhr.status === 200) {
     var response = JSON.parse(xhr.responseText);
-    var userId = response.user.fullName;
-      console.log("user name " + userId);
-      document.getElementById("username").innerHTML = "Welcome " + userId + "!";
+    var userName = response.user.fullName;
+      console.log("user name " + userName);
+
+      document.getElementById("username").innerHTML = "Welcome " + userName + "!";
+      document.getElementById("loginlink").style.display = "none";
       //document.write(xhr.responseText);
          }
 };
