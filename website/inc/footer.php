@@ -2,7 +2,8 @@
 
 <footer class="text-muted">
     <div class="container">
-        <a href="./termsandprivacy.php">Terms</a>
+        <a href="./termsandprivacy.php">Terms </a>
+        <span>  |  </span>
         <a href="./displayuserdata.php">Display Data</a>
         <p class="float-right">
             <a href="#">Back to top</a>
