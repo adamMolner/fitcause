@@ -15,9 +15,9 @@
             <p id="steps"></p>
 
             <h4>Badges:</h4>
-            <img class="badge" src="img/floors.png">
-            <img class="badge" src="img/miles.png">
-            <img class="badge" src="img/steps.png">
+            <img class="fitbit-badge" src="img/floors.png">
+            <img class="fitbit-badge" src="img/miles.png">
+            <img class="fitbit-badge" src="img/steps.png">
         </div>
     </div>
 </div>
