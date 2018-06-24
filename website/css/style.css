@@ -38,3 +38,12 @@ div#loginLink p.navbar-brand {
     margin-bottom: 0px !important;
     color: white !important;
 }
+
+a.nostyle, a.nostyle:active, a.nostyle:hover {
+    color: #6c757d !important;
+    text-decoration: none !important;
+}
+
+a.nostyle:hover {
+    color: white !important;
+}
