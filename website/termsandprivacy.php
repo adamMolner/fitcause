@@ -1,10 +1,8 @@
 <?php require 'inc/header.php'; ?>
 
 <div class="container">
-    <p>
-    Welcome to FitCause
-    These terms and conditions outline the rules and regulations for the use of FitCause's Website.FitCause 
-    FitCause is located atFitCause 
+    <h1>Welcome to FitCause</h1>
+    <p>These terms and conditions outline the rules and regulations for the use of FitCause's Website.FitCause is located atFitCause 
     4474 3rd Street , Detroit Michigan - 48201, United StatesFitCause
     By accessing this website we assume you accept these terms and conditions in full. Do not continue to use FitCause's websiteFitCause
     if you do not accept all of the terms and conditions stated on this page.FitCause
