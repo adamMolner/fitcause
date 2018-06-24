@@ -36,4 +36,5 @@ div.brand {
 
 div#loginLink p.navbar-brand {
     margin-bottom: 0px !important;
+    color: white !important;
 }
