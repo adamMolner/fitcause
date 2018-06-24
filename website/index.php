@@ -1,5 +1,14 @@
 <?php require 'inc/header.php'; ?>
 
+
+
+
+<a href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=22D2P8&redirect_uri=http%3A%2F%2Ffitcause-env-1.pvtvmgyr9v.us-east-1.elasticbeanstalk.com%2Fwebsite%2F&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800">Login</a>
+
+
+
+<div id="username"></div>
+
 <div class="container brands">
     <div class="row">
         <div class="col-md brand">
@@ -55,6 +64,43 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+<script>
+// get the url
+var url = window.location.href;
+
+console.log(url);
+
+//getting the access token from url
+var access_token = url.split("#")[1].split("=")[1].split("&")[0];
+
+// get the userid
+var userId = url.split("#")[1].split("=")[2].split("&")[0];
+
+console.log("access token");
+console.log(access_token);
+console.log("user id");
+console.log(userId);
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://api.fitbit.com/1/user/'+ userId +'/profile.json');
+xhr.setRequestHeader("Authorization", 'Bearer ' + access_token);
+xhr.onload = function() {
+   if (xhr.status === 200) {
+    var response = JSON.parse(xhr.responseText);
+    var userId = response.user.fullName;
+      console.log("user name " + userId);
+      document.getElementById("username").innerHTML = "Welcome " + userId + "!";
+      //document.write(xhr.responseText);
+         }
+};
+xhr.send();
+//console.log(xhr.responseText.user.fullName);
+
+</script>
+
+
 
 </body>
 </html>
