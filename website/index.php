@@ -1,7 +1,5 @@
 <?php require 'inc/header.php'; ?>
 
-<div id="username"></div>
-
 <div class="container brands">
     <div class="row">
         <div class="col-md brand">
